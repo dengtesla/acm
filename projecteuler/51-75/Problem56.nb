@@ -1,0 +1,67 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      1425,         57]
+NotebookOptionsPosition[      1101,         40]
+NotebookOutlinePosition[      1458,         56]
+CellTagsIndexPosition[      1415,         53]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Max", "@", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Total", "@", 
+     RowBox[{"IntegerDigits", "@", 
+      RowBox[{"(", 
+       RowBox[{"a", "^", "b"}], ")"}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "1", ",", "99"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b", ",", "1", ",", "99"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.731061379672118*^9, 3.731061379672118*^9}}],
+
+Cell[BoxData["972"], "Output",
+ CellChangeTimes->{3.7310613818621225`*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 490},
+WindowMargins->{{309, Automatic}, {Automatic, 48}},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (2011\:5e7410\:670824\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 429, 12, 31, "Input"],
+Cell[1011, 36, 74, 1, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
