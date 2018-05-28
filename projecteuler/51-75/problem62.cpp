@@ -31,20 +31,32 @@ void get_fractions(int n)
         b.push_back(bbb);
         i++;
     }while(1);
-
+    /*
     printf("[%d;(",AA);
     vector<int>::iterator it;
     for(it=a.begin();it!=a.end();it++)
         cout<<*it<<(it==a.end()-1?")]":",");
     //for(auto& x : a) cout << x;
     cout << endl;
-
+    */
 }
 
 int main()
 {
-    int n;
-    while(cin >> n)
-        get_fractions(n);
+    int cnt=0;
+    for(int i=1;i<=10000;i++)
+    {
+        int k = sqrt(i);
+        if(k*k!=i)
+        {
+            get_fractions(i);
+            if(a.size()%2==1)
+            {
+                cnt++;
+            }
+        }
+    }
+    cout << cnt << endl;
     return 0;
 }
+
