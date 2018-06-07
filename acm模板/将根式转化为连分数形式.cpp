@@ -45,6 +45,14 @@ int main()
 {
     int n;
     while(cin >> n)
+    {
+        if(floor(sqrt(n))*floor(sqrt(n))==n)
+        {
+            cout << sqrt(n) << endl;
+            continue;
+        }
         get_fractions(n);
+    }
+
     return 0;
 }
