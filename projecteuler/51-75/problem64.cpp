@@ -24,39 +24,31 @@ void get_fractions(int n)
         int ccc = (n - b[i]*b[i])/c[i];
         int aaa = (sqrt(n)+b[i])/ccc;
         int bbb = aaa*ccc-b[i];
-        if(a[0]==aaa&&b[0]==bbb&&c[0]==ccc)
-            break;
         c.push_back(ccc);
         a.push_back(aaa);
         b.push_back(bbb);
+        //cout << aaa << endl;
+        if(i>=3)
+        if(a[0]==a[i-1]&&a[1]==a[i]&&a[2]==a[i+1])
+        {
+            a.erase(a.begin());
+            a.erase(a.begin());
+            a.erase(a.begin());
+            //a.erase(a.begin()+3);
+            break;
+        }
         i++;
     }while(1);
-    /*
-    printf("[%d;(",AA);
+    //cout << i << endl;
     vector<int>::iterator it;
     for(it=a.begin();it!=a.end();it++)
-        cout<<*it<<(it==a.end()-1?")]":",");
-    //for(auto& x : a) cout << x;
-    cout << endl;
-    */
+        cout<<*it<<endl;
 }
 
 int main()
 {
-    int cnt=0;
-    for(int i=1;i<=10000;i++)
-    {
-        int k = sqrt(i);
-        if(k*k!=i)
-        {
-            get_fractions(i);
-            if(a.size()%2==1)
-            {
-                cnt++;
-            }
-        }
-    }
-    cout << cnt << endl;
+    int n;
+    cin >> n;
+    get_fractions(n);
     return 0;
 }
-
