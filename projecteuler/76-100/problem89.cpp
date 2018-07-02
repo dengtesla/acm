@@ -63,7 +63,7 @@ int main()
 
 
 
-    freopen("p089_roman.in","r",stdin);
+    freopen("problem89.in","r",stdin);
     char s[101];
     int cnt = 0;
     while(scanf("%s",s)!=EOF)
