@@ -37,7 +37,7 @@ void prime_factorization(long long n)
     memset(p,0,sizeof(p));
     long long psize=0;
     long long a = n;
-    for(int t = 1;prime[t]*prime[t]<=n;t++)
+    for(int t = 1;1LL*prime[t]*prime[t]<=n;t++)
     {
         if(a%prime[t]==0) p[++psize].value = prime[t];
         while(a%prime[t]==0)
