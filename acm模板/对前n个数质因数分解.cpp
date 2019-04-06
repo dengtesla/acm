@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define N 2000000
-vector <pair<long long,int>> d[2000004];
+#define N 64000000
+vector <pair<long long,int>> d[64000014];
 
 void init()
 {
@@ -28,7 +28,7 @@ void init()
 
 int main()
 {
-    init();
+    init();cout << 111111 << endl;
     int t;
     while(cin >> t)
     for(int i=0;i<d[t].size();i++)
